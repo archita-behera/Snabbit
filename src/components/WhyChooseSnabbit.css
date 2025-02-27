@@ -1,0 +1,111 @@
+
+/* why choose snabbit */
+.why-choose-snabbit {
+  width: 80%;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.why-choose-snabbit > h1{
+  width: 100%;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+}
+.why-choose-snabbit > h1 span{
+  color: #FF2E6D;
+}
+
+.why-choose-snabbit .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 3rem;
+  row-gap: 15rem;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.why-choose-snabbit .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.7s ease-in-out, opacity 1.5s ease-in-out;
+  padding: 0;
+  border: none;
+  color: black;
+  border-radius: 2rem;
+  
+}
+.why-choose-snabbit .card img{
+  width: 100%;
+  max-height: 200px;
+}
+
+/* Random Initial Placement (Scattered) */
+.why-choose-snabbit .card:nth-child(1) { transform: rotate(15deg) translate(150px, 100px); }
+.why-choose-snabbit .card:nth-child(2) { transform: rotate(-10deg) translate(0px, 100px); }
+.why-choose-snabbit .card:nth-child(3) { transform: rotate(20deg) translate(-100px, 200px); }
+.why-choose-snabbit .card:nth-child(4) { transform: rotate(-50deg) translate(150px, 100px); }
+.why-choose-snabbit .card:nth-child(5) { transform: rotate(8deg) translate(0px, 0px); }
+.why-choose-snabbit .card:nth-child(6) { transform: rotate(-12deg) translate(-100px, 0px); }
+
+/* Arrange into Grid when Section Becomes Visible */
+.why-choose-snabbit .card.arrange {
+  opacity: 1;
+  transform: rotate(0) translate(0, 0);
+}
+/* Moves h1 to the middle of the two rows when arranged */
+.why-choose-snabbit h1 {
+  position: absolute;
+  top: 5%; /* Start from the top */
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: top 0.7s ease-in-out;
+}
+
+/* Moves h1 to the middle of the two rows smoothly */
+.why-choose-snabbit.arranged h1 {
+  top: 50%; /* Moves down smoothly */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .why-choose-snabbit{
+      width: 100%;
+  }
+  .why-choose-snabbit h1 {
+    position: relative; /* Static positioning */
+    top: auto;
+    left: auto;
+    transform: none !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem; /* Space before grid */
+    font-size: 1.5rem;
+  }
+
+  .why-choose-snabbit .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .why-choose-snabbit .card {
+    transform: none !important; /* Remove animation */
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+

@@ -1,0 +1,230 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f2f2f3;
+}
+.container{
+  padding-top: 4rem;
+}
+
+.container > nav {
+  position: fixed; /* Fix the nav at the top */
+  top: 2rem;
+  left: 25%;
+  width: 50%;
+  background-color: white; /* Match your nav background color */
+  z-index: 1000; /* Ensure the nav stays above other content */
+  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+  border-radius: 2rem;
+}
+
+
+/* .container > nav{
+  width: 40%;
+  margin: auto;
+} */
+
+.container > nav > ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  list-style: none;
+  border-radius: 2rem;
+  place-items: center;
+  position: relative;
+}
+
+.container > nav > ul > li >a{
+text-decoration: none;
+color: rgb(93, 15, 54);
+font-size: 1.5rem;
+
+}
+.nav-logo {
+  display: none; /* Hide by default */
+}
+
+
+/* Hamburger Menu (hidden on desktop, visible on small screens) */
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #5D0F36;
+  margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Show logo and hamburger on small screens */
+  .container > nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+     border-radius: 0;
+  }
+  .nav-logo,
+  .hamburger {
+    display: flex;
+    
+  }
+
+  /* Hide navigation links by default on small screens */
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the nav */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+  }
+
+  /* Show navigation links when active */
+  #nav-menu.active {
+    display: flex;
+  }
+}  
+
+
+
+
+/* services section */
+
+/* Positioning Left and Right Images */
+.left-img {
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+  width: 12rem; /* 48 in Tailwind */
+}
+
+.right-img {
+  position: absolute;
+  right: 0;
+  bottom: -160px;
+  width: 12rem; /* 48 in Tailwind */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .left-img,
+  .right-img {
+      width: 30rem; /* 64 in Tailwind */
+  }
+}
+
+
+
+/* /Quick service */
+.services{
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 250px;
+}
+
+
+.services > .quick-service > .description{
+  text-align: center;
+  position: relative;
+}
+
+.services > .quick-service > .description > .left-star{
+  position: absolute;
+  top:10px;
+  left: 10px;
+  width: 2.5rem;
+}
+
+.services > .quick-service > .description > .right-star{
+  position: absolute;
+  width: 2.5rem;
+  bottom: 10px;
+  right: 10px;
+}
+
+.services > .quick-service > .description > :nth-child(2){
+  font-size: 5rem;
+}
+.services > .quick-service > .description > :nth-child(3){
+  font-size: 2.5rem;
+}
+
+.services > .quick-service > .description > :nth-child(3) > span{
+  color: #FF2E6D  ;
+}
+.services > .quick-service > .description > p{
+  font-size: 1.2rem;
+  padding: 1rem 0rem;
+  width: 35%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .services{
+      width: 100%;
+  }
+  .services > .quick-service > .description > :nth-child(2){
+      font-size: 3rem;
+  }
+  .services > .quick-service > .description > :nth-child(3){
+      font-size: 1rem;
+  }
+  .services > .quick-service > .description > p{
+      font-size: 1.2rem;
+      padding: 1rem 0rem;
+      width: 60%;
+      margin: auto;
+  }
+}
+
+/* Quick service end */
+
+
+/* app download-links */
+
+.app-download-links{
+  width: 40%;
+  margin: auto;
+  display: flex; 
+  gap: 1rem; 
+  margin-top: 1rem;
+  position: relative;
+  padding: 2rem 1rem;
+}
+.app-download-links > div{
+  background-color: #000;
+  display: flex;
+  place-items: center;
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+}
+.app-download-links > img{
+  width: 20px;
+  position: absolute;
+  top: 1rem;
+  left: 0px;    
+}
+@media (max-width: 768px) {
+  .app-download-links{
+      width: 100%;
+  }   
+}
+
+
+/* app-download-links-end */
+
