@@ -15,11 +15,18 @@ const SliderSection = () => {
 
   const services = [
     { img: "https://snabbit.com/assets/services/Kitchen%20Prep.png", title: "Kitchen" },
+    { img: "https://snabbit.com/assets/services/Laundry.png", title: "Fan Cleaning" },
+    { img: "https://snabbit.com/assets/services/Dishwashing.png", title: "Kitchen" },
+    { img: "https://snabbit.com/assets/services/General%20Cleaning.png", title: "Fan Cleaning" },
+    { img: "https://snabbit.com/assets/services/Window%20Cleaning.png", title: "Kitchen" },
     { img: "https://snabbit.com/assets/services/Fan%20Cleaning.png", title: "Fan Cleaning" },
     { img: "https://snabbit.com/assets/services/Kitchen%20Prep.png", title: "Kitchen" },
+    { img: "https://snabbit.com/assets/services/Laundry.png", title: "Fan Cleaning" },
+    { img: "https://snabbit.com/assets/services/Dishwashing.png", title: "Kitchen" },
+    { img: "https://snabbit.com/assets/services/General%20Cleaning.png", title: "Fan Cleaning" },
+    { img: "https://snabbit.com/assets/services/Window%20Cleaning.png", title: "Kitchen" },
     { img: "https://snabbit.com/assets/services/Fan%20Cleaning.png", title: "Fan Cleaning" },
-    { img: "https://snabbit.com/assets/services/Kitchen%20Prep.png", title: "Kitchen" },
-    { img: "https://snabbit.com/assets/services/Fan%20Cleaning.png", title: "Fan Cleaning" },
+    
   ];
 
   useEffect(() => {
@@ -39,7 +46,7 @@ const SliderSection = () => {
       {/* Mobile mockup section */}
       <div className="relative flex flex-wrap justify-center items-center mt-10">
         <motion.div className="phone-mockup" style={{ width: phoneSize, height: phoneSize, top: phoneTop }}>
-          <img src="/src/assets/phone-mockup.png" alt="Mobile Mockup" />
+          <img src="https://snabbit.com/assets/phone-mockup.png" alt="Mobile Mockup" />
         </motion.div>
       </div>
 

@@ -57,8 +57,8 @@ const HeroSection = () => {
 
       <section id="services" className="services">
       
-        <img src="../src/assets/cleaner1.png" alt="Left Illustration" className="left-img" />
-        <img src="../src/assets/cleaner2.png" alt="Right Illustration" className="right-img" />
+        <img src="https://snabbit.com/assets/illustrations/cleaner1.svg" alt="Left Illustration" className="left-img" />
+        <img src="https://snabbit.com/assets/illustrations/cleaner2.svg" alt="Right Illustration" className="right-img" />
 
         <div className="quick-service">
           <div className="description">
@@ -97,6 +97,7 @@ const HeroSection = () => {
               <div>
                 <img
                   src="https://snabbit.com/assets/download-app/apple-app-store.svg"
+                  
                   alt="App Store"
                 />
               </div>

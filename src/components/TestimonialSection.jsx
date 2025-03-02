@@ -10,14 +10,14 @@ const testimonials = [
   },
   {
     type: "image",
-    src: "/src/assets/Window Cleaning.png",
+    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
     text: "I recently started using Snabbit for weekly cleaning and I'm extremely impressed. They deliver quality services quickly at pocket-friendly rates. I now rely on them for weekly cleanings instead of a deep clean every 3 months.",
     name: "Shraddha Musale",
     location: "Powai",
   },
   {
     type: "video",
-    src: "https://www.w3schools.com/html/movie.mp4",
+    src: "https://snabbit.com/assets/testimonials/imgur_vid.mp4",
     text: "",
     name: "",
     location: "",
@@ -31,7 +31,7 @@ const testimonials = [
   },
   {
     type: "video",
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    src: "https://snabbit.com/assets/testimonials/shraddha_tripathi.mp4",
     text: "",
     name: "",
     location: "",

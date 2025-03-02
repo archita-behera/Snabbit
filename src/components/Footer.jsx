@@ -17,12 +17,12 @@ const Footer = () => {
 
         <div style={styles.storeButtons}>
           <img
-           src="/src/assets/google-play.svg"
+           src="https://snabbit.com/assets/download-app/google-play.svg"
             alt="Google Play"
             style={styles.storeIcon}
           />
           <img
-           src="/src/assets/apple-app-store.svg"
+           src="https://snabbit.com/assets/download-app/apple-app-store.svg"
             alt="App Store"
             style={styles.storeIcon}
           />
@@ -46,7 +46,7 @@ const Footer = () => {
         
       </div>
       <img
-  src="/src/assets/snabbit-icon.svg"
+  src="https://snabbit.com/assets/snabbit-icon.svg"
   alt="App Store"
   style={{
     width: "100%",
