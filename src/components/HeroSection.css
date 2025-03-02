@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #f2f2f3;
-}
+
 .container{
   padding-top: 4rem;
+ max-width: 1700px;
+    background-color: #f2f2f3;
+  
 }
 
 .container > nav {

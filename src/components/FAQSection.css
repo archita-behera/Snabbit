@@ -1,0 +1,80 @@
+/* FAQ Section Container */
+
+.faq-section {
+    background-color: #F8F8F8;
+    padding: 3rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    margin: 100px;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #5B0D3B;
+    margin-bottom: 2rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Individual FAQ Box */
+.faq-box {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+/* FAQ Button (Question) */
+.faq-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.faq-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    padding: 0 1.5rem 1rem;
+    color: #555;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+    color: rgb(255, 46, 109);
+    border: 2px solid #c8c9cd;  /* Add border */
+    border-radius: 50%;  /* Make it circular */
+    padding: 5px;  /* Adjust spacing inside */
+    width: 30px;  /* Ensure circular shape */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faq-icon.open {
+    transform: rotate(180deg);
+    color: #5B0D3B;
+}

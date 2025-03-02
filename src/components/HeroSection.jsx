@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // React Router support
+import  { useState, useEffect } from "react";
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -42,7 +41,7 @@ const HeroSection = () => {
 
         <ul className={`nav-menu ${isNavOpen ? "active" : ""}`}>
           <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How it </a></li>
+          <li><a href="#how-it-works">How it works</a></li>
           <li>
             <a href="#">
               <img
@@ -57,10 +56,8 @@ const HeroSection = () => {
       </nav>
 
       <section id="services" className="services">
-        {/* Left Image */}
+      
         <img src="../src/assets/cleaner1.png" alt="Left Illustration" className="left-img" />
-
-        {/* Right Image */}
         <img src="../src/assets/cleaner2.png" alt="Right Illustration" className="right-img" />
 
         <div className="quick-service">
@@ -70,7 +67,7 @@ const HeroSection = () => {
               src="https://snabbit.com/assets/star.svg"
               alt=""
             />
-            <h1>INDIA'S FIRST</h1>
+            <h1>INDIAS FIRST</h1>
             <h1>
               <span> QUICK</span> SERVICE APP
             </h1>

@@ -1,6 +1,4 @@
-import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-
 import HeroSection from "./components/HeroSection"; 
 import SliderSection from "./components/SliderSection";
 import SnabbitWorks from "./components/SnabbitWorks";

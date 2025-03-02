@@ -15,7 +15,7 @@ const CompanyLogos = () => {
   return (
     <div style={styles.container}>
       <h2 style={styles.heading}>
-        <span style={styles.highlight}>IN THE SPOTLIGHT</span>
+        <span style={styles.highlight}>IN THE  SPOTLIGHT</span>
       </h2>
       <div style={styles.logoContainer}>
         {logos.map((logo, index) => (
@@ -33,13 +33,14 @@ const styles = {
     backgroundColor: "#fff",
   },
   heading: {
-    fontSize: "24px",
+    fontSize: "40px",
     fontWeight: "bold",
-    marginBottom: "20px",
+    marginBottom: "40px 0 40px 0",
     color: "#000",
   },
   highlight: {
     color: "#E91E63",
+
   },
   logoContainer: {
     display: "flex",

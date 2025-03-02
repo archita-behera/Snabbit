@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 
 const testimonials = [
   {
@@ -15,14 +15,58 @@ const testimonials = [
     name: "Shraddha Musale",
     location: "Powai",
   },
+  {
+    type: "video",
+    src: "https://www.w3schools.com/html/movie.mp4",
+    text: "",
+    name: "",
+    location: "",
+  },
+  {
+    type: "image",
+    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+    text: "Snabbit’s home cleaning service is top-notch! The team is professional, efficient, and my home feels brand new after every session. Highly recommended!",
+    name: "Rajesh Kumar",
+    location: "Andheri",
+  },
+  {
+    type: "video",
+    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    text: "",
+    name: "",
+    location: "",
+  },
+  {
+    type: "image",
+    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7",
+    text: "As a business owner, I needed reliable office cleaning. Snabbit has exceeded my expectations with their consistency and attention to detail.",
+    name: "Ayesha Sharma",
+    location: "Bandra",
+  },
+  {
+    type: "video",
+    src: "https://www.w3schools.com/html/movie.mp4",
+    text: "",
+    name: "",
+    location: "",
+  },
+  {
+    type: "image",
+    src: "https://images.unsplash.com/photo-1521747116042-5a810fda9664",
+    text: "My carpets look as good as new after Snabbit’s service. The team is punctual and professional. I’ll definitely be using their services again.",
+    name: "Vikram Joshi",
+    location: "Juhu",
+  }
 ];
+
 
 const TestimonialSection = () => {
   const sliderRef = useRef(null);
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.heading}>DON'T JUST TAKE OUR WORD FOR IT</h2>
+      <h2 style={styles.heading}>DONT JUST TAKE OUR </h2>
+      <h2 style={styles.heading}>WORD FOR IT</h2>
       <div ref={sliderRef} style={styles.slider}>
         {testimonials.concat(testimonials).map((item, index) => (
           <div key={index} style={styles.card}>
@@ -54,21 +98,21 @@ const styles = {
     padding: "40px 20px",
   },
   heading: {
-    fontSize: "24px",
+    fontSize: "50px",
     fontWeight: "bold",
-    color: "#4E0E27",
-    marginBottom: "20px",
+    color:" #5B0D3B",
+    
   },
   slider: {
     display: "flex",
-    overflowX: "auto", 
+    overflowX: "auto", // Manual scrolling enabled
     scrollSnapType: "x mandatory",
     gap: "20px",
-    padding: "10px",
+    padding: "100px 0 50px 0",
     width: "90%",
     margin: "auto",
-    scrollbarWidth: "none", 
-    WebkitOverflowScrolling: "touch",
+    scrollbarWidth: "none", // Hides scrollbar in Firefox
+    WebkitOverflowScrolling: "touch", // Smooth scrolling for touch devices
   },
   card: {
     width: "280px",

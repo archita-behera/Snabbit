@@ -5,6 +5,7 @@ const Footer = () => {
     <div style={styles.footerContainer}>
       <div style={styles.content}>
         <div style={styles.textContainer}>
+          <h2 style={styles.title1}>INDIA'S FIRST</h2>
           <h2 style={styles.title}>
             <span style={{ color: "#FF3366", fontWeight: "bold" ,}}>QUICK</span>{" "}
             SERVICE APP
@@ -16,12 +17,12 @@ const Footer = () => {
 
         <div style={styles.storeButtons}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
+           src="/src/assets/google-play.svg"
             alt="Google Play"
             style={styles.storeIcon}
           />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple_app_store_badge.svg/512px-Apple_app_store_badge.svg.png"
+           src="/src/assets/apple-app-store.svg"
             alt="App Store"
             style={styles.storeIcon}
           />
@@ -48,10 +49,12 @@ const Footer = () => {
   src="/src/assets/snabbit-icon.svg"
   alt="App Store"
   style={{
-    width: "100vw", // Full width of the viewport
-    height: "auto", // Maintain aspect ratio
-    display: "block", // Removes extra space below the image
+    width: "100%",
+    height: "320px",
+    objectFit: "cover",
+    objectPosition: "top",
     opacity: "0.1",
+  
   }}
 />
 
@@ -60,34 +63,43 @@ const Footer = () => {
 };
 
 const styles = {
+
   
   footerContainer: {
-    backgroundColor: "#4D0833",
+    backgroundColor: "rgb(93 15 54 / var(--tw-bg-opacity, 1))",
     color: "white",
     textAlign: "center",
-    padding: "40px 20px",
+   
     fontFamily: "Arial, sans-serif",
     position: "relative",
     borderTopLeftRadius: "50px", // Left Border Curve
     borderTopRightRadius: "50px", // Right Border Curve
     overflow: "hidden", // Hide Overflow Content
-    clipPath: "inset(0px 0px 170px 0px)", // Bottom Cut Effect
+    
    
   },
   content: {
-    marginBottom: "30px",
+    margin: "100px 0 100px 0",
   },
   textContainer: {
-    marginBottom: "20px",
+    marginBottom: "50px",
   },
+  title1:{
+    fontSize: "40px",
+    fontWeight: "900",
+    letterSpacing: "-0.01em",
+  },
+
   title: {
-    fontSize: "24px",
-    fontWeight: "bold",
+    fontSize: "50px",
+    fontWeight: "900",
+    letterSpacing: "-0.01em",
     margin: "0",
   },
   subtitle: {
     fontSize: "16px",
     opacity: "0.8",
+   
   },
   storeButtons: {
     display: "flex",
@@ -97,11 +109,14 @@ const styles = {
   storeIcon: {
     width: "150px",
     cursor: "pointer",
+    backgroundColor:"black",
+    padding:"10px 20px 10px 20px",
+    borderRadius:"10px"
   },
   line: {
     border: "0.5px solid rgba(255, 255, 255, 0.2)",
     margin: "20px auto",
-    width: "80%",
+    width: "100%",
   },
   bottomContainer: {
     display: "flex",

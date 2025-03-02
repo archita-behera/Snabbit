@@ -1,7 +1,13 @@
 
+
+/* how snabbit works */
+/* how snabbit works */
+/* how snabbit works */
 .how-snabbit-works {
-  width: 60%; 
+  width: 60%; /* Adjust width as needed */
   margin: auto;
+  /* position: relative; */
+  /* min-height: 50vh; Ensure the container has enough height for sticky effect */
   position: relative;
   top: 100px;
 }
@@ -11,8 +17,8 @@
   margin-bottom: 20px;
   position: sticky;
   top: 10px; 
- 
-  padding: 20px 0;
+  /* z-index: 10; Ensure the heading stays above the cards */
+  padding: 20px 0; /* Add padding for better spacing */
   font-size: 4rem;
 }
 .how-snabbit-works h1 span{
@@ -22,7 +28,7 @@
 .how-snabbit-works .cards {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Adds space between cards */
   margin-top: 100px;
 }
 
@@ -32,12 +38,13 @@
   flex-direction: row;
   align-items: center;
   position: sticky;
-  top: 200px; 
-  background-color: #fff; 
-  padding: 20px; 
-  border-radius: 2rem; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 20px; 
+  top: 200px; /* Adjust this value to account for the heading height */
+  background-color: #fff; /* Optional: Adds a background color */
+  padding: 20px; /* Adds padding inside the card */
+  border-radius: 2rem; /* Optional: Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  border: none;
+  margin-bottom: 20px; /* Adds space between cards */
   gap: 5rem;
   
 }
@@ -49,22 +56,22 @@
 .how-snabbit-works .card img {
   width: 100%;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px; /* Optional: Rounds the corners of the image */
 }
 
 .how-snabbit-works .card div {
   flex: 2;
-  padding-left: 20px; 
+  padding-left: 20px; /* Adds space between the image and text */
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
 .how-snabbit-works .card button {
-  background-color: #FF2E6D; 
+  background-color: #FF2E6D; /* Example button color */
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 1rem;
   cursor: pointer;
   margin-bottom: 10px;
@@ -88,24 +95,24 @@
 
 @media (max-width: 767px) {
   .how-snabbit-works h1 {
-      font-size: 1.5rem; 
+      font-size: 1.5rem; /* Smaller font size for mobile */
   }
 
   .how-snabbit-works .card {
-      padding: 15px; 
+      padding: 15px; /* Reduce padding for mobile */
       flex-direction: column;
   }
 
   .card button {
-      font-size: 0.9rem; 
+      font-size: 0.9rem; /* Smaller button text for mobile */
   }
 
   .card > div > :nth-child(2) {
-      font-size: 1.2rem; 
+      font-size: 1.2rem; /* Smaller heading for mobile */
   }
 
   .card > div > :nth-child(3) {
-      font-size: 1rem; 
+      font-size: 1rem; /* Smaller paragraph text for mobile */
   }
   .how-snabbit-works .card button {
   width: 100%; 

@@ -1,18 +1,47 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import "./FAQSection.css"; // Import external CSS
 
 const faqs = [
   {
     question: "What is Snabbit?",
-    answer: "Snabbit is an on-demand service platform that connects users with professional service providers.",
+    answer:
+      "Snabbit is India's first on-demand services platform, offering quick and reliable home chore assistance right to your doorstep within 15 minutes.",
   },
   {
     question: "How do I book a service with Snabbit?",
-    answer: "You can book a service by selecting the desired category, choosing a provider, and confirming your booking.",
+    answer:
+      "Booking a service is easy! Just download our app, choose your preferred service and time, and confirm your booking.",
   },
   {
     question: "Can we get multiple tasks done in one booking?",
-    answer: "Yes, you can add multiple tasks while booking a service, depending on provider availability.",
+    answer:
+      "Absolutely! When you book a service on Snabbit, our experts can handle a variety of tasks like cleaning, dishwashing, laundry, bathroom cleaning, kitchen prep, and more—no need to specify in advance. Just let them know what you need, and they'll take care of it!",
+  },
+  {
+    question: "How can I trust the Experts sent by Snabbit?",
+    answer:
+      "All our service professionals are rigorously vetted, background-checked, and trained to deliver top-quality service. Our stringent verification process require government IDs, such as Aadhaar and PAN cards, and passing police verification to ensure no criminal records. Your safety and satisfaction are our top priorities.",
+  },
+  {
+    question: "What if I need to cancel or reschedule my booking?",
+    answer:
+      "You can easily cancel or reschedule your booking 30 minutes prior to the service start time. Please read our cancellation policy for more details.",
+  },
+  {
+    question: "What should I do if I have a problem with my service?",
+    answer:
+      "If you encounter any issues with your service, please contact our customer support team through the booking number 9004030470. We are here to help and ensure you have a great experience.",
+  },
+  {
+    question: "How quickly can I get an Expert to my home?",
+    answer:
+      "With Snabbit, you can get a service professional to your home within 15 minutes, depending on availability and your location.",
+  },
+  {
+    question: "Do you offer regular or subscription-based services?",
+    answer:
+      "We currently do not offer services over a longer duration. You can book with us whenever you have a requirement, and we will ensure a home help arrives within 15 minutes.",
   },
 ];
 
@@ -24,29 +53,22 @@ const FAQSection = () => {
   };
 
   return (
-    <div id="faqs" className="bg-gray-100 py-12 px-6 md:px-20 rounded-lg">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#5B0D3B] mb-8">
-        FAQs
-      </h2>
-      <div className="max-w-3xl mx-auto space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-sm">
-            <button
-              className="w-full flex justify-between items-center px-6 py-4 text-lg font-medium text-gray-900 focus:outline-none"
-              onClick={() => toggleFAQ(index)}
-            >
-              {faq.question}
-              <FaChevronDown
-                className={`transition-transform ${
-                  openIndex === index ? "rotate-180 text-[#5B0D3B]" : "text-gray-500"
-                }`}
-              />
-            </button>
-            {openIndex === index && (
-              <div className="px-6 pb-4 text-gray-700">{faq.answer}</div>
-            )}
-          </div>
-        ))}
+    <div id="faqs" className="outerdiv" style={{ backgroundColor: "rgb(255, 255, 255)" }}>
+      <div className="faq-section">
+        <h2 className="faq-title">FAQs</h2>
+        <div className="faq-container">
+          {faqs.map((faq, index) => (
+            <div key={index} className="faq-box">
+              <button className="faq-button" onClick={() => toggleFAQ(index)}>
+                {faq.question}
+                <FaChevronDown
+                  className={`faq-icon ${openIndex === index ? "open" : ""}`}
+                />
+              </button>
+              {openIndex === index && <div className="faq-answer">{faq.answer}</div>}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
