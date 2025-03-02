@@ -61,14 +61,14 @@ const styles = {
   },
   slider: {
     display: "flex",
-    overflowX: "auto", // Manual scrolling enabled
+    overflowX: "auto", 
     scrollSnapType: "x mandatory",
     gap: "20px",
     padding: "10px",
     width: "90%",
     margin: "auto",
-    scrollbarWidth: "none", // Hides scrollbar in Firefox
-    WebkitOverflowScrolling: "touch", // Smooth scrolling for touch devices
+    scrollbarWidth: "none", 
+    WebkitOverflowScrolling: "touch",
   },
   card: {
     width: "280px",

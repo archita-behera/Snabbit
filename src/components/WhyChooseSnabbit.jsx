@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./WhyChooseSnabbit.css"; // Ensure you create a CSS file for styling
+import "./WhyChooseSnabbit.css"; 
 
 const WhyChooseSnabbit = () => {
   useEffect(() => {

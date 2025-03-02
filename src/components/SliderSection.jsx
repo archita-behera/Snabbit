@@ -1,16 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import "./SliderSection.css"; // External CSS Import
+import "./SliderSection.css"; 
 
 const SliderSection = () => {
   const carouselRef = useRef(null);
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const { scrollYProgress } = useScroll({ target: containerRef });
-
-  // Mobile mockup size animation
   const phoneSize = useTransform(scrollYProgress, [0, 0.3], ["30%", "20%"]);
-  // Mobile mockup position animation (move to center)
   const phoneTop = useTransform(scrollYProgress, [0, 0.3], ["-50vh", "10vh"]);
 
   const services = [
@@ -36,14 +33,12 @@ const SliderSection = () => {
         ONE BOOKING, <span className="text-pink-500 italic">MANY</span> <span className="text-pink-500 italic">TASKS</span>
       </h2>
 
-      {/* Mobile mockup section */}
       <div className="relative flex flex-wrap justify-center items-center mt-10">
         <motion.div className="phone-mockup" style={{ width: phoneSize, height: phoneSize, top: phoneTop }}>
           <img src="/src/assets/phone-mockup.png" alt="Mobile Mockup" />
         </motion.div>
       </div>
 
-      {/* Carousel Section */}
       <div className="carousel-container">
         <div
           className="carousel"

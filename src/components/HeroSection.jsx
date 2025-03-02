@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         <ul className={`nav-menu ${isNavOpen ? "active" : ""}`}>
           <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#how-it-works">How it </a></li>
           <li>
             <a href="#">
               <img
