@@ -39,7 +39,7 @@ const SliderSection = () => {
       {/* Mobile mockup section */}
       <div className="relative flex flex-wrap justify-center items-center mt-10">
         <motion.div className="phone-mockup" style={{ width: phoneSize, height: phoneSize, top: phoneTop }}>
-          <img src="/src/assets/phone-mockup.png" alt="Mobile Mockup" />
+          <img src="https://snabbit.com/assets/phone-mockup.png" alt="Mobile Mockup" />
         </motion.div>
       </div>
 
